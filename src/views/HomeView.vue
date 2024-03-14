@@ -1,18 +1,41 @@
+<script setup lang="ts">
+import { ref } from "vue";
+import CustomNavbar from "@/components/organisms/CustomNavbar.vue";
 
-<script setup lang ="ts">
-import CustomNavbar from "@/components/organisms/CustomNavbar.vue"
-import CustomFax from "@/components/organisms/CustomFax.vue"
-import { RouterView} from 'vue-router'
+const isMouseNearNavbar = ref(false);
+const navbarRef = ref(null);
+
+function handleMouseEnter() {
+  isMouseNearNavbar.value = false;
+}
+
+function handleMouseLeave() {
+  isMouseNearNavbar.value = true;
+}
 </script>
 
 <template>
+  <div>
     <nav>
-    <CustomNavbar />
+      <CustomNavbar />
     </nav>
-    <RouterView />
+  </div>
 
+  <div class="lines">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+    </div>
+
+
+  <RouterView />
 </template>
 
 <style scoped>
+.floatNav {
+}
 
+.floatNavItem {
+
+}
 </style>

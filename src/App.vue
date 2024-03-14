@@ -6,9 +6,7 @@ import "@/assets/css/style.css"
 <template>
   <main>
   <header>
-      <nav>
-        <RouterLink to="/">Back Home</RouterLink>
-    </nav>
+
   </header>
 
   <RouterView />

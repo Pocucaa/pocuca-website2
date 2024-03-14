@@ -21,6 +21,16 @@ const router = createRouter({
           name: 'Portfolio',
           component: CustomPortfolio,
         },
+        // {
+        //   path: '/contact',
+        //   name: 'Contact',
+        //   component: CustomContact,
+        // },
+        // {
+        //   path: '/skull',
+        //   name: 'skull',
+        //   component: Customskull,
+        // },
       ]      
     },
   ]
