@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeLayout from '../layout/HomeLayout.vue'
 import CustomFax from '@/components/organisms/CustomFax.vue'
 import CustomPortfolio from '@/components/organisms/CustomPortfolio.vue'
 
@@ -9,7 +9,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: HomeLayout,
       children: [
         {
           path: '/fax',
