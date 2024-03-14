@@ -32,6 +32,10 @@
     @apply bg-green-800; 
 }
 
+.custom-github {
+    background-image: url ("../img/nekagit.png");
+}
+
 body {
     background-color: black;
     color: green;

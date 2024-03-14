@@ -56,7 +56,7 @@ m-0 flex transition-opacity duration-250 absolute
 flex-col fas fa-home fa-3x items-center justify-center h-custom-icon w-custom-icon
 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-yellow-400 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 transition-all duration-300 rounded-full
-ease-linear cursor-pointer">
+ease-linear cursor-pointer glow">
             </div>
             </router-link>
 
@@ -66,7 +66,7 @@ m-0 flex transition-opacity duration-250 absolute
 flex-col fas fa-leaf fa-3x items-center justify-center h-custom-icon w-custom-icon
 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 transition-all duration-300 rounded-full
-ease-linear cursor-pointer">
+ease-linear cursor-pointer glow">
             </div>
 
 <router-link to="portfolio">
@@ -76,7 +76,7 @@ m-0 flex transition-opacity duration-250 absolute
 flex-col fas fa-microchip fa-3x items-center justify-center h-custom-icon w-custom-icon
 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-blue-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 transition-all duration-300 rounded-full
-ease-linear cursor-pointer">
+ease-linear cursor-pointer glow">
             </div>
             </router-link>
 
@@ -88,14 +88,52 @@ m-0 flex transition-opacity duration-250 absolute
 flex-col fas fa-fire fa-3x items-center justify-center h-custom-icon w-custom-icon
 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-red-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 transition-all duration-300 rounded-full
-ease-linear cursor-pointer">
+ease-linear cursor-pointer glow">
             </div>
             </router-link>
+
+
+            <div ref="navbarRef2" @mouseenter="handleMouseEnter2" @mouseleave="handleMouseLeave2"
+:class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed center h-screen w-custom 
+m-0 flex transition-opacity duration-250  
+custom-github items-center justify-center h-custom-icon w-custom-icon
+mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
+hover:text-white rounded-3x1 hover:rounded-x1 duration-300 rounded-full
+ease-linear cursor-pointer glow image-githubneka">
+            </div>
+
+            <div ref="navbarRef2" @mouseenter="handleMouseEnter2" @mouseleave="handleMouseLeave2"
+:class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed center h-screen w-custom 
+m-0 flex transition-opacity duration-250  
+custom-github items-center justify-center h-custom-icon w-custom-icon
+bottom-0 mb-4 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
+hover:text-white rounded-3x1 hover:rounded-x1 duration-300 rounded-full
+ease-linear cursor-pointer glow image-githubpocuca">
+            </div>
+
+
 
         </div>
 </template>
 
 <style scoped>
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 30px rgb(84, 8, 236);
+  }
+  50% {
+    box-shadow: 0 0 40px rgb(82, 52, 111);
+  }
+  100% {
+    box-shadow: 0 0 30px rgb(84, 8, 236);
+  }
+}
+
+.glow {
+  animation: glow 3s infinite; /* Adjust the duration as needed */
+}
+
 @keyframes custom-pulse {
   0% {
     opacity: 1;
@@ -109,6 +147,22 @@ ease-linear cursor-pointer">
 }
 
 .custom-glow {
-  animation: custom-pulse 6s infinite;
+  animation: custom-pulse 20s infinite;
+}
+
+.image-githubneka {
+  /* Set the background image */
+  background-image: url('../src/assets/img/nekagit.png');
+  /* Adjust background properties as needed */
+  background-size: cover;
+  background-position: center;
+}
+
+.image-githubpocuca {
+  /* Set the background image */
+  background-image: url('../src/assets/img/pocuca.png');
+  /* Adjust background properties as needed */
+  background-size: cover;
+  background-position: center;
 }
 </style>
