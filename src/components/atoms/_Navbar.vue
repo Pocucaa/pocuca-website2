@@ -63,10 +63,10 @@ ease-linear cursor-pointer glow">
 <div ref="navbarRef2" @mouseenter="handleMouseEnter2" @mouseleave="handleMouseLeave2"
 :class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed top-0 right-0 h-screen w-custom 
 m-0 flex transition-opacity duration-250 absolute 
-flex-col fas fa-leaf fa-3x items-center justify-center h-custom-icon w-custom-icon
+flex-col items-center justify-center h-custom-icon w-custom-icon
 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 transition-all duration-300 rounded-full
-ease-linear cursor-pointer glow">
+ease-linear cursor-pointer glow image-xenomorph">
             </div>
 
 <router-link to="portfolio">
@@ -88,24 +88,24 @@ m-0 flex transition-opacity duration-250 absolute
 flex-col fas fa-fire fa-3x items-center justify-center h-custom-icon w-custom-icon
 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-red-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 transition-all duration-300 rounded-full
-ease-linear cursor-pointer glow">
+ease-linear cursor-pointer glow ">
             </div>
             </router-link>
 
 
             <div ref="navbarRef2" @mouseenter="handleMouseEnter2" @mouseleave="handleMouseLeave2"
-:class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed center h-screen w-custom 
+:class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed center 
 m-0 flex transition-opacity duration-250  
-custom-github items-center justify-center h-custom-icon w-custom-icon
-mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
+custom-github items-center justify-center 
+bottom-16 mb-4 left-4 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 duration-300 rounded-full
 ease-linear cursor-pointer glow image-githubneka">
             </div>
 
             <div ref="navbarRef2" @mouseenter="handleMouseEnter2" @mouseleave="handleMouseLeave2"
-:class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed center h-screen w-custom 
+:class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed center 
 m-0 flex transition-opacity duration-250  
-custom-github items-center justify-center h-custom-icon w-custom-icon
+custom-github items-center justify-center 
 bottom-0 mb-4 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 duration-300 rounded-full
 ease-linear cursor-pointer glow image-githubpocuca">
@@ -156,6 +156,8 @@ ease-linear cursor-pointer glow image-githubpocuca">
   /* Adjust background properties as needed */
   background-size: cover;
   background-position: center;
+  height: 3rem;
+  width: 3rem;
 }
 
 .image-githubpocuca {
@@ -164,5 +166,18 @@ ease-linear cursor-pointer glow image-githubpocuca">
   /* Adjust background properties as needed */
   background-size: cover;
   background-position: center;
+  height: 3rem;
+  width: 3rem;
 }
+
+.image-xenomorph {
+  /* Set the background image */
+  background-image: url('../src/assets/img/xenomorph.jpg');
+  /* Adjust background properties as needed */
+  background-size: cover;
+  background-position: center;
+  height: 3rem;
+  width: 3rem;
+}
+
 </style>

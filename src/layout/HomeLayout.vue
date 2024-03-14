@@ -2,7 +2,6 @@
 import { ref } from "vue";
 import CustomNavbar from "@/components/organisms/CustomNavbar.vue";
 
-
 const isMouseNearNavbar = ref(false);
 const navbarRef = ref(null);
 
@@ -21,7 +20,6 @@ function handleMouseLeave() {
       <CustomNavbar />
     </nav>
   </div>
-
 
 
     <footer>
