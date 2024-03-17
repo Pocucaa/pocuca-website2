@@ -11,6 +11,15 @@ import CustomFooter from "@/components/organisms/CustomFooter.vue";
     </nav>
   </div>
 
+  <div>
+
+  </div>
+
+
+
+
+
+
 
     <CustomFooter />
 

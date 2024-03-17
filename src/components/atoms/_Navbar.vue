@@ -51,8 +51,8 @@ function handleMouseLeave4() {
 
 <router-link to="/">
 <div ref="navbarRef1" @mouseenter="handleMouseEnter1" @mouseleave="handleMouseLeave1"
-:class="{ 'opacity-0 custom-glow': isMouseNearNavbar1 }" class="top-0 left-0 h-screen w-custom 
-m-0 flex transition-opacity duration-250 absolute 
+:class="{ 'opacity-0 custom-glow': isMouseNearNavbar1 }" class="fixed top-0 left-0 h-screen w-custom 
+m-0 flex duration-250  
 flex-col fas fa-home fa-3x items-center justify-center h-custom-icon w-custom-icon
 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-yellow-400 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 transition-all duration-300 rounded-full
@@ -60,19 +60,21 @@ ease-linear cursor-pointer glow">
             </div>
             </router-link>
 
+<router-link to="jurney">
 <div ref="navbarRef2" @mouseenter="handleMouseEnter2" @mouseleave="handleMouseLeave2"
 :class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed top-0 right-0 h-screen w-custom 
-m-0 flex transition-opacity duration-250 absolute 
+m-0 flex duration-250  
 flex-col fas fa-leaf fa-3x items-center justify-center h-custom-icon w-custom-icon
 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 transition-all duration-300 rounded-full
 ease-linear cursor-pointer glow ">
             </div>
+            </router-link>
 
 <router-link to="portfolio">
 <div ref="navbarRef3" @mouseenter="handleMouseEnter3" @mouseleave="handleMouseLeave3"
 :class="{ 'opacity-0 custom-glow': isMouseNearNavbar3 }" class="fixed bottom-0 left-0 h-screen w-custom 
-m-0 flex transition-opacity duration-250 absolute 
+m-0 flex duration-250
 flex-col fas fa-microchip fa-3x items-center justify-center h-custom-icon w-custom-icon
 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-blue-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 transition-all duration-300 rounded-full
@@ -84,7 +86,7 @@ ease-linear cursor-pointer glow">
 <router-link to="fax">
 <div ref="navbarRef4" @mouseenter="handleMouseEnter4" @mouseleave="handleMouseLeave4"
 :class="{ 'opacity-0 custom-glow': isMouseNearNavbar4 }" class="fixed bottom-0 right-0 h-screen w-custom 
-m-0 flex transition-opacity duration-250 absolute 
+m-0 flex duration-250
 flex-col fas fa-fire fa-3x items-center justify-center h-custom-icon w-custom-icon
 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-red-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 transition-all duration-300 rounded-full
@@ -95,7 +97,7 @@ ease-linear cursor-pointer glow ">
 
             <div ref="navbarRef2" @mouseenter="handleMouseEnter2" @mouseleave="handleMouseLeave2"
 :class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed center 
-m-0 flex transition-opacity duration-250  
+m-0 flex duration-250  
 custom-github items-center justify-center 
 bottom-0 mb-4 ml-16 mr-0 shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 duration-300 rounded-full
@@ -104,7 +106,7 @@ ease-linear cursor-pointer glow image-githubneka">
 
             <div ref="navbarRef2" @mouseenter="handleMouseEnter2" @mouseleave="handleMouseLeave2"
 :class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed center 
-m-0 flex transition-opacity duration-250  
+m-0 flex duration-250  
 custom-github items-center justify-center 
 bottom-0 mb-4 ml-0 shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 duration-300 rounded-full

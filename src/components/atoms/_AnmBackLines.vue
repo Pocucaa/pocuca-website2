@@ -54,9 +54,10 @@ body {
 .line {
   position: absolute;
   width: 1px;
-  height: 100%;top: 0;
-    left: 66%;
-    overflow: hidden;
+  height: 100%;
+  top: 0;
+  left: 66%;
+  overflow: hidden;
 }
 .centralLine {
   position: absolute;

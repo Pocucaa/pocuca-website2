@@ -10,7 +10,7 @@
 p {
     font-size: 1rem;
     margin-left: 10rem;
-    position: absolute;
+    position: fixed;
     bottom: 1.5rem;
 }
 </style>

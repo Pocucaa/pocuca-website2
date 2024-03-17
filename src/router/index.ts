@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeLayout from '../layout/HomeLayout.vue'
 import CustomFax from '@/components/organisms/CustomFax.vue'
 import CustomPortfolio from '@/components/organisms/CustomPortfolio.vue'
+import CustomJurney from '@/components/organisms/CustomJurney.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,11 +22,11 @@ const router = createRouter({
           name: 'Portfolio',
           component: CustomPortfolio,
         },
-        // {
-        //   path: '/contact',
-        //   name: 'Contact',
-        //   component: CustomContact,
-        // },
+        {
+          path: '/jurney',
+          name: 'Jurney',
+          component: CustomJurney,
+        },
         // {
         //   path: '/skull',
         //   name: 'skull',
