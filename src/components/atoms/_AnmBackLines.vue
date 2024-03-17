@@ -16,7 +16,7 @@
     <div class="line" style="--animation-delay: 0s;"></div>
   </div>
 </template>
-
+<!-- smanjiti opacity svezdica (da ne smaraju kad citas) i dodati jos zvezdica -->
 <style scoped>
 
 * {

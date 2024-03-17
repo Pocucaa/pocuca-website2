@@ -1,16 +1,21 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { useRouter } from 'vue-router';
 
 const isMouseNearNavbar1 = ref(false);
 const isMouseNearNavbar2 = ref(false);
 const isMouseNearNavbar3 = ref(false);
 const isMouseNearNavbar4 = ref(false);
+const isMouseNearNavbar5 = ref(false);
+const isMouseNearNavbar6 = ref(false);
 
 
 const navbarRef1 = ref(null);
 const navbarRef2 = ref(null);
 const navbarRef3 = ref(null);
 const navbarRef4 = ref(null);
+const navbarRef5 = ref(null);
+const navbarRef6 = ref(null);
 
 
 
@@ -44,6 +49,20 @@ function handleMouseLeave4() {
     isMouseNearNavbar4.value = true;
 }
 
+function handleMouseEnter5() {
+    isMouseNearNavbar5.value = false;
+}
+
+function handleMouseLeave5() {
+    isMouseNearNavbar5.value = true;
+}
+function handleMouseEnter6() {
+    isMouseNearNavbar6.value = false;
+}
+
+function handleMouseLeave6() {
+    isMouseNearNavbar6.value = true;
+}
 </script>
 
 <template>
@@ -94,25 +113,27 @@ ease-linear cursor-pointer glow ">
             </div>
             </router-link>
 
-
-            <div ref="navbarRef2" @mouseenter="handleMouseEnter2" @mouseleave="handleMouseLeave2"
-:class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed center 
+<a href="https://github.com/nekagit" target="_blank">
+            <div ref="navbarRef5" @mouseenter="handleMouseEnter5" @mouseleave="handleMouseLeave5"
+:class="{ 'opacity-0 custom-glow': isMouseNearNavbar5 }" class="fixed center 
 m-0 flex duration-250  
 custom-github items-center justify-center 
 bottom-0 mb-4 ml-16 mr-0 shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 duration-300 rounded-full
 ease-linear cursor-pointer glow image-githubneka">
             </div>
+          </a>
 
-            <div ref="navbarRef2" @mouseenter="handleMouseEnter2" @mouseleave="handleMouseLeave2"
-:class="{ 'opacity-0 custom-glow': isMouseNearNavbar2 }" class="fixed center 
+<a href="https://github.com/Pocucaa" target="_blank">
+            <div ref="navbarRef6" @mouseenter="handleMouseEnter6" @mouseleave="handleMouseLeave6"
+:class="{ 'opacity-0 custom-glow': isMouseNearNavbar6 }" class="fixed center 
 m-0 flex duration-250  
 custom-github items-center justify-center 
 bottom-0 mb-4 ml-0 shadow-lg bg-gray-800 text-green-500 hover:bg-green-700
 hover:text-white rounded-3x1 hover:rounded-x1 duration-300 rounded-full
 ease-linear cursor-pointer glow image-githubpocuca">
             </div>
-
+          </a>
 
 
         </div>

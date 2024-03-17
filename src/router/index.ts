@@ -28,13 +28,14 @@ const router = createRouter({
           component: CustomJurney,
         },
         // {
-        //   path: '/skull',
-        //   name: 'skull',
-        //   component: Customskull,
+        //   path: 'https://github.com/Pocucaa',
+        //   name: 'githubpocuca',
+        //   component: CustomNavbar,
         // },
       ]      
     },
   ]
 })
+
 
 export default router
