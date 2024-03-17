@@ -5,9 +5,6 @@ import "@/assets/css/style.css"
 
 <template>
   <main>
-  <header>
-
-  </header>
 
   <RouterView />
   </main>

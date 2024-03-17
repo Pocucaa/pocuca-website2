@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Portfolio from "@/components/atoms/_Portfolio.vue"
+import Footer from "@/components/atoms/_Footer.vue"
 </script>
 
 <template>
-    <Portfolio />
+   <Footer />
 </template>
 
 <style scoped>

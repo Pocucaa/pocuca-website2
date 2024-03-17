@@ -1,17 +1,7 @@
 <script setup lang="ts">
-import { ref } from "vue";
 import CustomNavbar from "@/components/organisms/CustomNavbar.vue";
+import CustomFooter from "@/components/organisms/CustomFooter.vue";
 
-const isMouseNearNavbar = ref(false);
-const navbarRef = ref(null);
-
-function handleMouseEnter() {
-  isMouseNearNavbar.value = false;
-}
-
-function handleMouseLeave() {
-  isMouseNearNavbar.value = true;
-}
 </script>
 
 <template>
@@ -22,18 +12,11 @@ function handleMouseLeave() {
   </div>
 
 
-    <footer>
-    <p>Made by &copy; nekagit &copy; Pocuca</p>
-    </footer>
+    <CustomFooter />
 
   <RouterView />
 </template>
 
 <style scoped>
-.floatNav {
-}
 
-.floatNavItem {
-
-}
 </style>
