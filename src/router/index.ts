@@ -27,11 +27,6 @@ const router = createRouter({
           name: 'Jurney',
           component: CustomJurney,
         },
-        // {
-        //   path: 'https://github.com/Pocucaa',
-        //   name: 'githubpocuca',
-        //   component: CustomNavbar,
-        // },
       ]      
     },
   ]

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import CustomNavbar from "@/components/organisms/CustomNavbar.vue";
 import CustomFooter from "@/components/organisms/CustomFooter.vue";
+import CustomCard from "@/components/organisms/CustomCard.vue";
 
 </script>
 
@@ -12,7 +13,7 @@ import CustomFooter from "@/components/organisms/CustomFooter.vue";
   </div>
 
   <div>
-
+      <!-- <CustomCard /> -->
   </div>
 
 
@@ -23,7 +24,8 @@ import CustomFooter from "@/components/organisms/CustomFooter.vue";
 
     <CustomFooter />
 
-  <RouterView />
+
+    <RouterView />
 </template>
 
 <style scoped>

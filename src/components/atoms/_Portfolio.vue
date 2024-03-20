@@ -74,7 +74,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt na
 .portfolio-right {
     width: 55%;
     float: right;
-    padding-right: 15%;
+    padding-right: 13%;
+    padding-left: 3%;
     
 }
 

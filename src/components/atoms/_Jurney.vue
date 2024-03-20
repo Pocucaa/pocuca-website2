@@ -1,8 +1,9 @@
 <script setup lang="ts">
-
+import AnmBackShiny from "@/components/atoms/_AnmBackShiny.vue";
 </script>
 
 <template>
+            <AnmBackShiny />
     <div class="Jurney">
             Jurney
         <br><br><br>
@@ -30,10 +31,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt na
 <style scoped>
 .Jurney {
     font-size: 22px;
-    background: linear-gradient(to bottom, red, blue);
+    /* background: linear-gradient(to bottom, red, blue);
     -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    background-clip: text; */
+    /* color: transparent; */
+    color: aliceblue;
     padding-right: 15%;
 }
 </style>
