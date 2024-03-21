@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { RouterLink, RouterView, useRoute } from 'vue-router'
-import "@/assets/css/style.css" 
+import "@/assets/css/style.css";
+import { RouterView } from 'vue-router';
 
 </script>
 
 <template>
   <div>
-
+<RouterView/>
   </div>
 </template>
 

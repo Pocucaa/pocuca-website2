@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-white w-full h-screen">asdfsdcasdv
     </div>
 </template>
 
