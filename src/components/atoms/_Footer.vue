@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<p>made by &copy; Pocuca &copy; Nekagit</p>
+<p>made by &copy; Pocuca &copy; nekagit</p>
 </template>
 
 <style scoped>
