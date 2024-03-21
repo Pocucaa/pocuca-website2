@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useAppStore } from "@/stores/appStore";
 import { ref } from "vue";
 import { useRouter } from 'vue-router';
 
@@ -16,6 +17,10 @@ const navbarRef3 = ref(null);
 const navbarRef4 = ref(null);
 const navbarRef5 = ref(null);
 const navbarRef6 = ref(null);
+ enum EventView {
+  DEFAULT = 'default',
+  FOCUSED = 'focused'
+}
 
 
 
@@ -63,10 +68,11 @@ function handleMouseEnter6() {
 function handleMouseLeave6() {
     isMouseNearNavbar6.value = true;
 }
+
 </script>
 
 <template>
-        <div>
+        <div v-if="useAppStore().currentEventView == EventView.DEFAULT">
 
 <router-link to="/">
 <div ref="navbarRef1" @mouseenter="handleMouseEnter1" @mouseleave="handleMouseLeave1"
