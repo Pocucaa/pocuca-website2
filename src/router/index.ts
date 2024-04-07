@@ -2,7 +2,7 @@ import CustomJurney from '@/components/organisms/CustomJurney.vue'
 import CustomPortfolio from '@/components/organisms/CustomPortfolio.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeLayout from '../layout/HomeLayout.vue'
-import FlameView from '@/pages/FlameView.vue'
+import FaxView from '@/pages/FaxView.vue'
 
 
 const router = createRouter({
@@ -13,15 +13,10 @@ const router = createRouter({
       name: 'home',
       component: HomeLayout,
       children: [
-        // {
-        //   path: '/fax',
-        //   name: 'Fax',
-        //   component: FlameView,
-        // },
         {
           path: '/fax',
           name: 'Fax',
-          component: FlameView
+          component: FaxView
         },
         {
           path: '/portfolio',
