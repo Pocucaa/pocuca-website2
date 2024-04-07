@@ -34,7 +34,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import ispit1 from '@/assets/oet1/ispit8 (1).pdf'
 import ispit2 from '@/assets/oet1/ispit8 (2).pdf'
 import { EventView, useAppStore } from '@/stores/appStore'
