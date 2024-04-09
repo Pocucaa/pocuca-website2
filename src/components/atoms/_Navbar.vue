@@ -147,58 +147,6 @@ ease-linear cursor-pointer glow image-githubpocuca">
 
 <style scoped>
 
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 30px rgb(84, 8, 236);
-  }
-  50% {
-    box-shadow: 0 0 40px rgb(82, 52, 111);
-  }
-  100% {
-    box-shadow: 0 0 30px rgb(84, 8, 236);
-  }
-}
-
-.glow {
-  animation: glow 3s infinite; /* Adjust the duration as needed */
-}
-
-@keyframes custom-pulse {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.custom-glow {
-  animation: custom-pulse 20s infinite;
-}
-
-.image-githubneka {
-  /* Set the background image */
-  background-image: url('../src/assets/img/nekagit.png');
-  /* Adjust background properties as needed */
-  background-size: cover;
-  background-position: center;
-  height: 3rem;
-  width: 3rem;
-}
-
-.image-githubpocuca {
-  /* Set the background image */
-  background-image: url('../src/assets/img/pocuca.png');
-  /* Adjust background properties as needed */
-  background-size: cover;
-  background-position: center;
-  height: 3rem;
-  width: 3rem;
-}
-
 .image-xenomorph {
   /* Set the background image */
   background-image: url('../src/assets/img/xenomorph.jpg');

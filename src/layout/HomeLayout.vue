@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import CustomFooter from '@/components/organisms/CustomFooter.vue'
-import CustomNavbar from '@/components/organisms/CustomNavbar.vue'
-import { EventView, useAppStore } from '@/stores/appStore'
-import { ref } from 'vue'
-import { useRoute } from 'vue-router'
+import CustomNavbar from '@/components/organisms/CustomNavbar.vue';
+import { EventView, useAppStore } from '@/stores/appStore';
+import { useRoute } from 'vue-router';
 
 const route = useRoute()
 console.log(route.fullPath, window.location.href)
@@ -29,7 +27,6 @@ console.log(route.fullPath, window.location.href)
     </button>
   </div>
 
-  <CustomFooter />
   <RouterView />
 </template>
 
