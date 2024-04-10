@@ -11,6 +11,9 @@ import AnmBackLines from "@/components/atoms/_AnmBackLines.vue";
 <h2>Electrical engineering / Programming</h2>
 <div class="electronics-programing">
 - First year of Electrical Engineering at Faculty of Tehnical Sciences <br><br>
+
+<i class="fa-brands fa-vuejs"></i>
+<i class="fa-brands fa-python"></i>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, id aperiam rerum, assumenda accusantium, magnam et numquam eaque pariatur culpa ullam. Non porro odit sint, architecto officia cumque aut exercitationem!
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ipsa aliquid, suscipit nobis cupiditate, nesciunt error pariatur consequuntur quis sequi veritatis repellendus fugit odio vel beatae est vero dolorum voluptatum.
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, asperiores modi impedit tempore, quae dolorem porro pariatur ducimus omnis nesciunt placeat ipsum maiores est totam harum cum commodi minus nostrum?

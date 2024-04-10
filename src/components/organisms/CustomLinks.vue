@@ -52,7 +52,7 @@ body:before {
 
 /* GlassIco styles */
 .glassIco {
-  --width: 100px;
+  --width: 70px;
   box-sizing: border-box;
   transition: 200ms;
   width: var(--width);
